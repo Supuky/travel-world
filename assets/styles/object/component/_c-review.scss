@@ -1,0 +1,34 @@
+@use '../../foundation/mixin.scss' as mix;
+
+.reviewStar{
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  white-space: nowrap;
+  &_grey {
+      color: grey;
+      font-size: 0.8em;
+  }
+
+  &_color {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #F9BA0E;
+    font-size: 0.8em;
+  }
+
+  @include mix.mq(pc) {
+      &_grey {
+          font-size: 1em;
+      }
+
+      &_color {
+          font-size: 1em;
+      }
+  }
+
+}

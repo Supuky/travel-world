@@ -1,0 +1,144 @@
+@use './variables.scss' as var;
+@use './mixin.scss' as mix;
+
+body {
+    font-family: "Kameron", "Noto Sans JP", sans-serif;
+  }
+  img {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+
+.main-title {
+@include mix.font-lg;
+font-weight: 600;
+margin-bottom: 0;
+display: block;
+}
+.sub-title {
+@include mix.font-sm;
+color: var.$cSubTitle;
+margin-bottom: 20px;
+
+
+}
+
+.purple {
+  color: var.$cAqua;
+}
+
+#main-content {
+position: relative;
+z-index: 0;
+}
+
+main {
+position: relative;
+z-index: -1;
+}
+
+#container {
+background-color: var.$cWhite;
+position: relative;
+z-index: 10;
+transition: transform 0.5s, box-shadow 0.5s;
+}
+
+@include mix.mq(pc) {
+  .swiper-slide {
+    box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.logo {
+  font-size: 42px;
+  display: flex;
+
+  &__img {
+    width: 0.9em;
+  }
+
+  &__world {
+    color: var.$cAqua;
+  }
+}
+
+
+.side {
+  display: none;
+  position: fixed;
+  top: 70%;
+  transform: translateY(-50%);
+  transition: all .3s ease-in;
+  @include mix.mq(l-pc) {
+    display: block;
+  }
+
+  & .tween-animate-title {
+    color: var.$cBlack;
+    text-decoration: none !important;
+    margin: 0 40px;
+    vertical-align: middle;
+    letter-spacing: 2px;
+  }
+
+  &.left {
+    left: -50px;
+
+    &.inview {
+      left: 50px;
+    }
+
+    & .side__inner {
+      transform-origin: top left;
+      transform: rotate(-90deg);
+    }
+    
+  }
+  &.right {
+    right: -50px;
+
+    &.inview {
+      right: 50px;
+    }
+
+    & .side__inner {
+      transform-origin: top right;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.icon {
+  position: relative;
+
+  @include mix.p-base($left: -20px, $top: 50%, $width: 1em, $height: 1em) {
+    transform: translateY(-50%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &.twitter{
+    &::before {
+      background-image: url(../images/twitter.svg);
+    }
+  }
+  &.fb{
+    &::before {
+      background-image: url(../images/facebook.svg);
+    }
+  }
+
+  &.tictok {
+    &::before {
+      background-image: url(../images/icons8-tiktok.svg);
+    }
+  }
+
+  &.instagram {
+    &::before {
+      background-image: url(../images/icons8-instagram.svg);
+    }
+  }
+}

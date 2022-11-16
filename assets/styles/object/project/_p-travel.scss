@@ -1,0 +1,117 @@
+@use '../../foundation/variables.scss' as var;
+@use '../../foundation/mixin.scss' as mix;
+
+.p-travel {
+    @include mix.content-width;
+    @include mix.mb-lg;
+  
+    &__inner {
+      box-shadow: rgb(0 0 0 / 15%) 0px 7px 40px 0px;
+      border-radius: 10px;
+      @include mix.flex;
+      justify-content: space-between;
+      padding: 15px;
+      background-color: var.$cBgGray;
+      position: relative;
+      z-index: 0;
+    }
+  
+    &__title {
+      position: relative;
+  
+      @include mix.p-base(
+        $display: none,
+        $width: 100px,
+        $height: 1px,
+        $top: 50%,
+        $left: -120px
+      ) {
+        background-color: var.$cBlack;
+        transform: translateY(-50%) scaleX(0);
+        transition: transform 0.3s ease 1.6s;
+        transform-origin: right;
+      }
+
+    }
+  
+    &__sub {
+      @include mix.mb-sm;
+    }
+  
+    &__img {
+      border-radius: 10px;
+      height: 300px;
+      @include mix.mb-sm;
+      transition: box-shadow 1ms linear 0.8s;
+  
+      & > img {
+        position: relative;
+        z-index: -1;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+  
+      &.inview {
+        box-shadow: inset 0 0 30px var.$cBlack;
+      }
+    }
+  
+    &__texts {
+      @include mix.pb-sm;
+  
+      &.inview {
+        & .travel__title::before {
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    &__btn {
+        text-align: center;
+
+        @include mix.mq(pc) {
+            text-align: left;
+        }
+    }
+
+    @include mix.mq(l-pc) {
+        &__inner {
+            padding: 50px 150px;
+        }
+    }
+
+    @include mix.mq(tab) {
+        &__inner {
+            padding: 50px;
+            @include mix.tab-flex;
+        }
+        &__texts,
+        &__img {
+            flex-basis: 47%;
+        }
+    
+        &__texts {
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+
+    
+
+    @include mix.mq(pc) {
+        &__img {
+            height: 400px;
+          }
+        
+          &__description {
+            margin-bottom: 40px;
+          }
+          &__title {
+            &::before {
+              display: block;
+            }
+        }
+    }
+}
+  

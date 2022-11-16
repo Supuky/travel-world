@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>travelWorld</title>
+    <meta name="description" content="This site is a test site.">
+    <link rel="icon" href="assets/images/site_logo.svg">
+    <link rel="stylesheet" href="assets/styles/loader.css">
+    <script src="assets/scripts/vendors/pace.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/vendors/bootstrap-reboot.css" />
+    <link rel="stylesheet" href="assets/styles/vendors/swiper.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css"/>
+  </head>
+  <body>
+    <div id="global-container">
+      <div id="container">
+        <div class="mobile-menu__cover"></div>
+        <div class="nav-trigger"></div>
+        <header class="p-header">
+          <div class="p-header__inner appear up">
+            <div class="logo item">
+              <img src="assets/images/site_logo.svg" alt="" class="logo__img"  />
+              <span class="logo__stay">travel</span>
+              <span class="logo__world">World</span>
+            </div>
+            <nav class="p-header__nav">
+              <ul class="p-header__ul">
+                <li class="p-header__li item"><a href="#">Service</a></li>
+                <li class="p-header__li item"><a href="#">Company</a></li>
+                <li class="p-header__li item">
+                  <a class="btn filled" href="#">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <button class="mobile-menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </header>
+        <div id="content">
+          <div class="hero">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="hero__title">Enjoy Rich</div>
+                  <img src="assets/images/bathroom.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">Fantastic</div>
+                  <img src="assets/images/villa28.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">Experience</div>
+                  <img src="assets/images/villa06.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">Beautiful</div>
+                  <img src="assets/images/bath-room.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">Wonderful</div>
+                  <img src="assets/images/villa08.jpeg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero__title">Greate</div>
+                  <img src="assets/images/villa04.jpeg" alt="" />
+                </div>
+              </div>
+              <div class="hero__footer">
+                <img class="hero__downarrow" src="assets/images/arrow.svg" />
+                <span class="hero__scrolltext">scroll</span>
+              </div>
+            </div>
+          </div>
+          <div id="main-content">
+            <aside class="side left">
+              <div class="side__inner">
+                <a class="twitter icon tween-animate-title" href="#">Twitter</a>
+                <a class="fb icon tween-animate-title" href="#">Facebook</a>
+              </div>
+            </aside>
+            <main>
+              <section class="p-travel">
+                <div class="p-travel__inner">
+                  <div class="p-travel__img cover-slide">
+                    <img
+                      class="img-zoom"
+                      src="assets/images/interia.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="p-travel__texts appear left">
+                    <div class="p-travel__texts-inner">
+                      <div class="p-travel__title main-title item">
+                        <span class="purple">Travel</span>
+                        <span>the world</span>
+                      </div>
+                      <div class="p-travel__sub sub-title item">世界中を旅しよう</div>
+                      <div class="p-travel__description item">
+                        <p>
+                          世界中で<br />利用できる民泊サービスです。
+                        </p>
+                        <p>あなたの望む宿泊先を見つけよう</p>
+                      </div>
+                      <div class="p-travel__btn item">
+                        <button class="btn filled">もっと詳しく</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="p-houses">
+                <div>
+                  <h2 class="main-title tween-animate-title"> Accommodation World</h2>
+                  <p class="sub-title tween-animate-title">宿泊先一覧</p>
+                </div>
+                <div class="p-houses__inner">
+                  <div class="p-houses__item">
+                    <div class="cover-slide hover-darken"
+                    style="border-radius: 10px 10px 0 0;">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(assets/images/villa26.jpeg); border-radius: 10px 10px 0 0;"
+                      ></div>
+                    </div>
+                    <div class="p-houses__textarea">
+                      <p class="p-houses__title">Villa 01</p>
+                      <div class="reviewStar">
+                        <p class="reviewStar_grey">★★★★★</p>
+                        <p id="reviewStar_color" class="reviewStar_color">★★★★★</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-houses__item">
+                    <div class="cover-slide hover-darken"
+                    style="border-radius: 10px 10px 0 0;">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(assets/images/villa01.jpeg); border-radius: 10px 10px 0 0;"
+                      ></div>
+                    </div>
+                    <div class="p-houses__textarea">
+                      <p class="p-houses__title">Villa 02</p>
+                      <div class="reviewStar">
+                        <p class="reviewStar_grey">★★★★★</p>
+                        <p id="reviewStar_color" class="reviewStar_color">★★★★★</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-houses__item">
+                    <div class="cover-slide hover-darken"
+                    style="border-radius: 10px 10px 0 0;">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(assets/images/villa.jpeg); border-radius: 10px 10px 0 0;"
+                      ></div>
+                    </div>
+                    <div class="p-houses__textarea">
+                      <p class="p-houses__title">Villa 03</p>
+                      <div class="reviewStar">
+                        <p class="reviewStar_grey">★★★★★</p>
+                        <p id="reviewStar_color" class="reviewStar_color">★★★★</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-houses__item">
+                    <div class="cover-slide hover-darken"
+                    style="border-radius: 10px 10px 0 0;">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(assets/images/villa28.jpeg); border-radius: 10px 10px 0 0;"
+                      ></div>
+                    </div>
+                    <div class="p-houses__textarea">
+                      <p class="p-houses__title">Villa 04</p>
+                      <div class="reviewStar">
+                        <p class="reviewStar_grey">★★★★★</p>
+                        <p id="reviewStar_color" class="reviewStar_color">★★★</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-houses__item">
+                    <div class="cover-slide hover-darken"
+                    style="border-radius: 10px 10px 0 0;">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(assets/images/villa15.jpeg); border-radius: 10px 10px 0 0;"
+                      ></div>
+                    </div>
+                    <div class="p-houses__textarea">
+                      <p class="p-houses__title">Villa 05</p>
+                      <div class="reviewStar">
+                        <p class="reviewStar_grey">★★★★★</p>
+                        <p id="reviewStar_color" class="reviewStar_color">★★★</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-houses__item">
+                    <div class="cover-slide hover-darken"
+                    style="border-radius: 10px 10px 0 0;">
+                      <div
+                        class="bg-img-zoom img-bg50"
+                        style="background-image: url(assets/images/villa27.jpeg); border-radius: 10px 10px 0 0;"
+                      ></div>
+                    </div>
+                    <div class="p-houses__textarea">
+                      <p class="p-houses__title">Villa 06</p>
+                      <div class="reviewStar">
+                        <p class="reviewStar_grey">★★★★★</p>
+                        <p id="reviewStar_color" class="reviewStar_color">★★★</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-houses__btn appear up">
+                    <button class="btn slide-bg item">もっと詳しく</button>
+                  </div>
+                </div>
+              </section>
+              <section class="p-popular">
+                <div class="p-popular__header">
+                  <h2 class="main-title tween-animate-title">Popular Destinations</h2>
+                  <p class="sub-title tween-animate-title">人気の観光地</p>
+                </div>
+                <div class="p-popular__inner appear up">
+                  <div class="p-popular__container">
+                    <div class="p-popular__item item">
+                      <div class="p-popular__img">
+                        <img src="assets/images/london01.jpeg" alt="" />
+                      </div>
+                      <div class="p-popular__title">ロンドン</div>
+                    </div>
+                    <div class="p-popular__item item">
+                      <div class="p-popular__img">
+                        <img src="assets/images/amsterdam06.jpeg" alt="" />
+                      </div>
+                      <div class="p-popular__title">アムステルダム</div>
+                    </div>
+                    <div class="p-popular__item item">
+                      <div class="p-popular__img">
+                        <img src="assets/images/sea.jpeg" alt="" />
+                      </div>
+                      <div class="p-popular__title">モルディブ</div>
+                    </div>
+                    <div class="p-popular__item item">
+                      <div class="p-popular__img">
+                        <img src="assets/images/newyork.jpeg" alt="" />
+                      </div>
+                      <div class="p-popular__title">ニューヨーク</div>
+                    </div>
+                    <div class="p-popular__btn appear up">
+                      <button class="btn cover-3d item">
+                        <span>
+                          一覧から探す
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </main>
+            <aside class="side right">
+              <div class="side__inner">
+                <!-- <span class="tween-animate-title">&copy;Supuky</span> -->
+                <a class="instagram icon tween-animate-title" href="#">Instagram</a>
+                <a class="tictok icon tween-animate-title" href="#">Tictok</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <footer class="p-footer appear up">
+          <div class="logo item">
+            <img src="assets/images/site_logo.svg" alt="" class="logo__img" />
+            <span class="logo__stay">travel</span>
+            <span class="logo__world">World</span>
+          </div>
+          <nav class="p-footer__nav">
+            <ul class="p-footer__ul">
+              <li class="p-footer__li item"><a href="#">Service</a></li>
+              <li class="p-footer__li item"><a href="#">Contact</a></li>
+              <li class="p-footer__li item"><a href="#">Company</a></li>
+              <!-- <li class="p-footer__li item"><a href="#">Sitemap</a></li> -->
+            </ul>
+            <!-- <div class="p-footer__copyright item">
+              &copy; Supuky
+            </div> -->
+          </nav>
+        </footer>
+      </div>
+      <nav class="mobile-menu">
+        <div class="logo">
+          <img src="assets/images/site_logo.svg" alt="" class="logo__img" />
+          <span class="logo__stay">travel</span>
+          <span class="logo__world">World</span>
+        </div>
+        <ul class="mobile-menu__main">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
+              <span class="main-title">Service</span>
+              <span class="sub-title">サービス</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
+              <span class="main-title">Company</span>
+              <span class="sub-title">会社概要</span>
+            </a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#">
+              <span class="main-title">Contact</span>
+              <span class="sub-title">コンタクト</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <script src="assets/scripts/vendors/swiper.min.js"></script>
+    <script src="assets/scripts/vendors/TweenMax.min.js"></script>
+    <script src="assets/scripts/vendors/scroll-polyfill.js"></script>
+    <script src="assets/scripts/libs/scroll.js"></script>
+    <script src="assets/scripts/libs/text-animation.js"></script>
+    <script src="assets/scripts/libs/hero-slider.js"></script>
+    <script src="assets/scripts/libs/mobile-menu.js"></script>
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>

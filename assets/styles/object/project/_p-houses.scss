@@ -1,0 +1,51 @@
+@use "../../foundation/mixin.scss" as mix;
+@use "../../foundation/variables.scss" as var;
+
+.p-houses {
+    @include mix.content-width;
+    @include mix.mb-lg;
+  
+    &__inner {
+      @include mix.flex;
+    }
+
+    &__item {
+      border-radius: 10px;
+      box-shadow: rgb(0 0 0 / 15%) 0px 7px 40px 0px;
+      margin-bottom: 1rem;
+    }
+
+    &__textarea {
+      display: flex;
+      align-items: center;
+    }
+  
+    &__title {
+      @include mix.font-lr;
+      // @include mix.mb-sm;
+      padding: 10px;
+    }
+  
+    &__btn {
+      text-align: center;
+      flex-basis: 100%;
+    }
+
+    @include mix.mq(tab) {
+        &__inner {
+            @include mix.tab-flex;
+            justify-content: space-between;
+        }
+
+        &__item {
+            flex-basis: 48%;
+            margin-bottom: 60px;
+        }
+    }
+
+    @include mix.mq(pc) {
+      &__title {
+        padding: 15px;
+      }
+    }
+}

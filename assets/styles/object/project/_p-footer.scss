@@ -1,0 +1,64 @@
+@use '../../foundation/variables.scss' as var;
+@use '../../foundation/mixin.scss' as mix;
+
+
+.p-footer {
+    padding: 60px 0;
+    @include mix.content-width;
+  
+    &__nav {
+      @include mix.flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+  
+    &__ul {
+      @include mix.flex;
+      padding: 0;
+      // margin: 0;
+      list-style: none;
+    }
+  
+    &__li {
+      padding: 0;
+      margin: 10px;
+  
+      & > a {
+        color: var.$cSubTitle;
+      }
+    }
+  
+    & .logo {
+      font-size: 38px;
+      justify-content: center;
+    }
+
+    @include mix.mq(tab) {
+
+        & .logo {
+            justify-content: flex-start;
+        }
+
+        &__nav {
+            @include mix.tab-flex;
+        }
+
+        &__ul {
+            @include mix.tab-flex;
+            margin: 0;
+        }
+    
+        &__li {
+            margin-left: 0;
+            margin-right: 30px;
+        }
+    }
+
+    @include mix.mq(pc) {
+        &__li {
+          justify-content: flex-start;
+        }
+    }
+}
+  

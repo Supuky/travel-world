@@ -1,0 +1,69 @@
+@use '../../foundation/variables.scss' as var;
+@use '../../foundation/mixin.scss' as mix;
+
+
+.p-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var.$navHeight;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+  
+    &.triggered {
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 10px 0 25px -10px rgba(0, 0, 0, 0.5);
+    }
+  
+    &__nav {
+      display: none;
+    }
+  
+    &__ul {
+      display: flex;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+  
+    &__li {
+      margin-left: 20px;
+  
+      & > a {
+        color: var.$cBlack;
+        text-decoration: none !important;
+        text-transform: uppercase;
+      }
+    }
+  
+    & .logo {
+      font-size: 38px;
+      justify-content: center;
+    }
+  
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include mix.content-width;
+    }
+
+    @include mix.mq(pc) {
+      &__nav {
+        display: block;
+      }
+    }
+  }
+
+  .mobile-menu {
+    @include mix.mq(pc) {
+      &__btn {
+          display: none;
+      }
+    }
+}
+  
